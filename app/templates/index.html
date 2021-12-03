@@ -1,0 +1,23 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}GRAPH{% endblock %}
+
+{% block content %}
+
+<div class="p-3 mb-2 text-info text-center" >
+    <h1>Data Visualisation</h1>
+</div>
+
+<div class="container mt-5 text-center">
+    <img src="{{href}}" height="600" />
+    <form method="POST" class="d-flex p-2 position-absolute">
+        <label>Input a list of ages(Comma-Separated)</label>
+        <input name="text">
+        <input type="submit" class="btn btn-info">
+    </form>
+</div>
+
+{% endblock %}
+
+
+
